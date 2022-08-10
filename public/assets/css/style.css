@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/ipl\ web\ 2.jpg") top right no-repeat;
+  background: #040404 url("../img/IPL.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -238,7 +238,7 @@ margin-top:0px;
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Product sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
