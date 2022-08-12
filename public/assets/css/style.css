@@ -1302,7 +1302,7 @@ section .container {
 {
   section .container {
     background: rgba(0, 0, 0, 0.9);
-    padding:0;
+    padding:10px;
   }
 
   .reg{
@@ -1318,3 +1318,23 @@ section .container {
     margin: 4px 10px;
   } 
 }
+
+
+@media(max-width:992px) {
+  #ener
+  {
+    text-align: center;
+  }
+  #sponsor{
+    padding-top: 20px;
+  }
+  .section-title{
+    padding-left: 20px;
+  }
+  #rul{
+    padding-top: 20px;
+  }
+  #contact{
+    padding-top: 10px;
+  }
+  }

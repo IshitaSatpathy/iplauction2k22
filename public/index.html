@@ -49,8 +49,8 @@
         </a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2 style="font-family:'Origin Tech Demo', sans-serif;font-size: 25px;">Energized Entrepreneurs</h2>
-      <h2 style="font-family: 'Product sans', sans-serif;">IPL <span>Auction</span> 2021</h2>
+      <h2 id="ener" style="font-family:'Origin Tech Demo', sans-serif;font-size: 25px;">Energized Entrepreneurs</h2>
+      <h2 style="font-family: 'Product sans', sans-serif;">IPL <span>Auction</span> 2022</h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -400,7 +400,7 @@
 
       <div class="section-title">
 
-        <p>Rules</p>
+        <p id="rul">Rules</p>
       </div>
       <div class="row">
         <div class="col-lg-6">
@@ -615,7 +615,7 @@
     <div class="container">
 
       <div class="section-title">
-        <p class="reg">register here</p>
+        <p class="reg" id="regs">register here</p>
       </div>
       <!--<div class="alert alert-danger text-center mt-5" role="alert">
        <strong>
@@ -623,7 +623,7 @@
            </strong>
       </div>-->
 
-      <form role="form" class="register-form mt-4">
+      <form role="form" class="register-form mt-4" id="registration-form">
 
         <div class="section-title">
 
@@ -631,7 +631,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="lname" placeholder="Your Name" required>
+            <input type="text" name="tlname" class="form-control" id="lname" placeholder="Your Name" required>
           </div>
           <div class="col-md-6 form-group mt-3 mt-md-0">
             <input type="email" class="form-control" name="email" id="lemail" placeholder="Your Email" required>
@@ -645,7 +645,7 @@
               required>
           </div>
           <div class="col-md-6 form-group mt-3">
-            <input list="course-name" name="course-name" class="form-control" id="lcname" placeholder="Course" required>
+            <input list="course-name" name="coursename" class="form-control" id="lcname" placeholder="Course" required>
             <datalist id="course-name">
               <option value="B.Tech/BE">
               <option value="M.Tech/ME">
@@ -656,7 +656,7 @@
           </div>
 
           <div class="col-md-6 form-group mt-3">
-            <input list="course-spec" name="course-spec" class="form-control" id="lcspec"
+            <input list="course-spec" name="coursespec" class="form-control" id="lcspec"
               placeholder="Course Specialization " required>
             <datalist id="course-spec">
               <option value="Architecture">
@@ -678,7 +678,7 @@
 
 
           <div class="col-md-6 form-group mt-3">
-            <input list="study-year" name="study-year" class="form-control" id="lyr" placeholder="Year of Study "
+            <input list="study-year" name="studyyear" class="form-control" id="lyr" placeholder="Year of Study "
               required>
             <datalist id="study-year">
               <option value="1st Year">
@@ -698,14 +698,14 @@
           </div>
 
           <div class="col-md-6 form-group mt-3">
-            <input list="teammembers" type="tel" pattern="[1-10]{1-2}" name="teammembers" class="form-control"
+            <input list="teammembers" type="tel" name="teammembers" class="form-control"
               id="tmember" placeholder="Choose" required>
             <datalist id="teammembers">
-              <option value="1">
-              <option value="2">
-              <option value="3">
-              <option value="4">
-              <option value="5">
+              <option value=1>
+              <option value=2>
+              <option value=3>
+              <option value=4>
+              <option value=5>
 
             </datalist>
           </div>
@@ -715,7 +715,7 @@
           </div>
 
           <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="m1name" placeholder="Your Name">
+            <input type="text" name="t1name" class="form-control" id="m1name" placeholder="Your Name">
           </div>
           <!--<div class="col-md-6 form-group mt-3 mt-md-0">
             <input type="email" class="form-control" name="email" id="m1email" placeholder="Your Email">
@@ -778,7 +778,7 @@
           </div>
 
           <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="m2name" placeholder="Your Name">
+            <input type="text" name="t2name" class="form-control" id="m2name" placeholder="Your Name">
           </div>
           <!--<div class="col-md-6 form-group mt-3 mt-md-0">
             <input type="email" class="form-control" name="email" id="m2email" placeholder="Your Email">
@@ -841,7 +841,7 @@
 
 
           <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="m3name" placeholder="Your Name">
+            <input type="text" name="t3name" class="form-control" id="m3name" placeholder="Your Name">
           </div>
           <!--<div class="col-md-6 form-group mt-3 mt-md-0">
             <input type="email" class="form-control" name="email" id="m3email" placeholder="Your Email">
@@ -904,7 +904,7 @@
 
 
           <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="m4name" placeholder="Your Name">
+            <input type="text" name="t4name" class="form-control" id="m4name" placeholder="Your Name">
           </div>
           <!--<div class="col-md-6 form-group mt-3 mt-md-0">
             <input type="email" class="form-control" name="email" id="m4email" placeholder="Your Email">
@@ -961,12 +961,12 @@
             </datalist>
           </div>-->
 
-          <div class="section-title mt-5">
+          <!--<div class="section-title mt-5">
             <h2 style="font-size:20px;"> Team Member 5</h2>
           </div>
           <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="m5name" placeholder="Your Name">
-          </div>
+            <input type="text" name="t5name" class="form-control" id="m5name" placeholder="Your Name">
+          </div>-->
           <!--<div class="col-md-6 form-group mt-3 mt-md-0">
             <input type="email" class="form-control" name="email" id="m5email" placeholder="Your Email">
           </div>
@@ -1259,7 +1259,7 @@
         <p style="font-size:25px;">Team Preferences</p>
       </div>   
       <div class="col-md-4 form-group mt-3">
-        <input list="team-preference" name="team-preference" class="form-control" id="tp1" placeholder="First Preference " required>
+        <input list="team-preference" name="teampreference1" class="form-control" id="tp1" placeholder="First Preference " required>
         <datalist id="team-preference">
          <option value="Mumbai Indians">
          <option value="Chennai Super Kings">
@@ -1274,7 +1274,7 @@
         </datalist>
                  </div>
                  <div class="col-md-4 form-group mt-3">
-                  <input list="team-preference" name="team-preference" class="form-control" id="tp2" placeholder="Second Preference " required>
+                  <input list="team-preference" name="teampreference2" class="form-control" id="tp2" placeholder="Second Preference " required>
                   <datalist id="team-preference">
                     <option value="Mumbai Indians">
                       <option value="Chennai Super Kings">
@@ -1289,7 +1289,7 @@
                   </datalist>
                            </div>
                            <div class="col-md-4 form-group mt-3">
-                            <input list="team-preference" name="team-preference" class="form-control" id="tp3" placeholder="Third Preference" required>
+                            <input list="team-preference" name="teampreference3" class="form-control" id="tp3" placeholder="Third Preference" required>
                             <datalist id="team-preference">
                               <option value="Mumbai Indians">
                                 <option value="Chennai Super Kings">
@@ -1314,15 +1314,25 @@
                                     </div>
                                     <div class="row justify-content-md-center">
                                       <div class="col-md-6 form-group mt-3 d-flex justify-center">
-                                      <input type="file"  class="form-control" id="image" placeholder="select image" accept="image/*"></div>
+                                      <input type="file" name="pays" class="form-control" id="image" placeholder="select image" accept="image/*"></div>
                                       <div class="col-md-2 text-center text-lg-left form-group mt-3 mt-md-0">
-                                       <button class="btn btn-primary mt-3 " type="button" onclick="upload()">Upload</button></div>
-                                       <span><div class="text-center mt-3"><button type="submit">Submit</button></div></span> 
+                                       <span><div class="text-center mt-3" ><button type="submit" id="submitbutton">Submit</button></div></span> 
                                       </div>
+
+
         
       </div>
       
     </form>
+    <div
+    id="form-success"
+    style="width: 100%; height: 100%; display: none; place-content: center; padding: 32px; border: none;"
+    class="container text-success"
+  >
+    <p>Registration successful!</p>
+  </div>
+
+
 
     </div>
   </section>
@@ -1402,7 +1412,7 @@
 
       <div class="section-title">
         <!-- <h2>Sponsors</h2>-->
-        <p>Our Sponsors</p>
+        <p id="sponsor">Our Sponsors</p>
         <i>Coming Soon</i>
       </div>
 
@@ -1558,7 +1568,7 @@
 
       <div class="section-title">
         <!--<h2>Contact</h2>-->
-        <p>Contact Us</p>
+        <p id="contact">Contact Us</p>
       </div>
 
       <div class="row mt-2">
@@ -1647,7 +1657,7 @@
   <!-- Template Main JS File -->
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/database.js"></script>
+  <script src="assets/js/firestore.js" type="module"></script>
 </body>
 
 </html>
