@@ -390,14 +390,14 @@ section .container {
   font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: "";
   width: 120px;
   height: 1px;
   display: inline-block;
   background: #e94560;
   margin: 4px 10px;
-}
+} */
 
 .section-title p {
   margin: 0;
@@ -1297,4 +1297,16 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+@media (max-width:992px)
+{
+  section .container {
+    background: rgba(0, 0, 0, 0.9);
+    padding:0;
+  }
+
+  .reg{
+    padding-top: 15px;
+    padding-left: 25px;
+  }
 }
